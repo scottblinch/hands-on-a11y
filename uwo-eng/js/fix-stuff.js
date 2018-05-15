@@ -23,7 +23,7 @@ jQuery(($) => {
 	 */
 	const fixPopularLinksToggle = () => {
 		$('.flip').off('click');
-		$('.flipjar__button').on('click', () => $('.panelbck').slideToggle('slow', focusTheFirstThing));
+		$('.flipjar__button').on('click', () => $('.panelbck').slideToggle(focusTheFirstThing));
 	};
 
 	/**
