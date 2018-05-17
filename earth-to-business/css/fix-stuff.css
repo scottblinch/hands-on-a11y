@@ -1,0 +1,16 @@
+#wrapper .cheader-social {
+    background-color: #75782B !important;
+}
+
+.breadcrumbs.breadcrumbs li,
+.breadcrumbs.breadcrumbs a {
+    color: #fff !important;
+}
+
+#main .avada-row {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+#sidebar .widget h3 {
+    font-size: 30px !important;
+}
