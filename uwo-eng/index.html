@@ -60,9 +60,16 @@
     <script type="text/javascript" charset="utf-8" async="" src="./index_files/timeline.e7653a8bc8be5342f5ecf22ae2e65c92.js"></script>
     <link type="text/css" rel="stylesheet" href="chrome-extension://dagdlcijhfbmgkjokkjicnnfimlebcll/style.css">
     <script type="text/javascript" charset="utf-8" src="chrome-extension://dagdlcijhfbmgkjokkjicnnfimlebcll/page_context.js"></script>
+    <link href="css/fix-stuff.css" rel="stylesheet">
 </head>
 
 <body screen_capture_injected="true">
+<div class="header-skip-links">
+    <a href="#main-content" class="sr-only sr-only-focusable">Skip to main content</a>
+    <a href="#sidebar" class="sr-only sr-only-focusable">Skip to sidebar</a>
+    <a href="#grey-bg" class="sr-only sr-only-focusable">Skip to social section</a>
+    <a href="#footer" class="sr-only sr-only-focusable">Skip to footer</a>
+</div>
 <!-- Ribbon include begins -->
 <div class="panelbck">
     <div class="panel">
@@ -301,7 +308,7 @@
     </div>
     <!--end div grid_12-->
     <div class="clear"></div>
-    <div class="main-content">
+    <div class="main-content" id="main-content">
         <div class="grid_9" id="content-left">
 
             <h2 class="title-bar-grey">NEWS</h2>
@@ -421,6 +428,7 @@
                 <h3><img alt="WesternU" class="social-icon" src="./index_files/twitter_32.png"> <a
                         href="http://twitter.com/WesternuEng" rel="noopener noreferrer" target="_blank">Engineering on
                     Twitter</a></h3>
+                <a href="#skip-twitter" class="sr-only sr-only-focusable">Skip Twitter box</a>
                 <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-timeline twitter-timeline-rendered" style="position: static; visibility: visible; display: inline-block; width: 520px; height: 250px; padding: 0px; border: none; max-width: 100%; min-width: 180px; margin-top: 0px; margin-bottom: 0px; min-height: 200px;" data-widget-id="345556310068166657" title="Twitter Timeline" src="./index_files/saved_resource.html"></iframe>
                 <script type="text/javascript">
                     // <![CDATA[
@@ -436,6 +444,7 @@
                     }(document, "script", "twitter-wjs");
                     // ]]>
                 </script>
+                <div id="skip-twitter"></div>
             </div>
             <div class="grid_3 social">
                 <h3><a href="https://www.flickr.com/photos/westerneng/sets/" rel="noopener noreferrer"
