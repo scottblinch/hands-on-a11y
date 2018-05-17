@@ -103,3 +103,37 @@ div.panel ul {
         display: block;
     }
 }
+
+#menu li:focus-within {
+    background-color: #fff;
+}
+
+#menu li:focus-within a {
+    color: #333 !important;
+
+}
+
+#menu li a:focus {
+    outline: 2px solid highlight;
+}
+
+#menu li:focus-within .drop {
+    background: url(https://www.uwo.ca/web_standards/img/meganav/drop-alt.png) no-repeat right 7px;
+    margin-bottom: 2px;
+}
+
+#menu li:focus-within .ex-link {
+    background: url(https://www.uwo.ca/web_standards/img/meganav/ex-link-alt.png) no-repeat right 5px;
+    margin-bottom: 2px;
+}
+#menu li:focus-within div a {
+    font-size: 14px;
+    color: #015b86;
+}
+
+.drop:focus + .dropdown_1column,
+.dropdown_1column:focus-within {
+    left: -1px;
+    top: auto;
+    opacity: 1;
+}
