@@ -14,3 +14,12 @@
 #sidebar .widget h3 {
     font-size: 30px !important;
 }
+
+.form-group {
+    margin: 0 15px 15px;
+}
+
+.wpcf7-submit.wpcf7-submit {
+    margin-bottom: 15px !important;
+    float: right !important;
+}
