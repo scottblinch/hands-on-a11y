@@ -71,7 +71,7 @@
     <a href="#footer" class="sr-only sr-only-focusable">Skip to footer</a>
 </div>
 <!-- Ribbon include begins -->
-<div class="panelbck">
+<div class="panelbck" id="panelbck">
     <div class="panel">
         <div class="ribboninputcontainer">
             <h4>Faculty / Staff Search</h4>
@@ -99,27 +99,46 @@
         </div>
         <!-- end .grid_10 -->
         <div class="lists">
-            <ul style="border: 0;">
-                <li><a href="https://www.lib.uwo.ca/" target="_blank">Libraries</a></li>
-                <li><a href="https://www.uwo.ca/about/visit/maps.html" target="_blank">Maps</a></li>
-                <li><a href="https://www.uwo.ca/parking/" target="_blank">Parking</a></li>
+            <ul>
+                <li><a href="https://wts.uwo.ca/webmail/" target="_blank">WebMail</a></li>
+                <li><a href="https://owl.uwo.ca/" target="_blank">OWL</a></li>
+                <li><a href="https://student.uwo.ca/" target="_blank">Student Services</a></li>
             </ul>
             <ul>
                 <li><a href="https://www.uwo.ca/directory.html" target="_blank">Directory</a></li>
                 <li><a href="https://www.uwo.ca/a-z.html" target="_blank">Websites A - Z</a></li>
                 <li><a href="http://events.westernu.ca/" target="_blank">Events</a></li>
             </ul>
-            <ul>
-                <li><a href="https://wts.uwo.ca/webmail/" target="_blank">WebMail</a></li>
-                <li><a href="https://owl.uwo.ca/" target="_blank">OWL</a></li>
-                <li><a href="https://student.uwo.ca/" target="_blank">Student Services</a></li>
+            <ul style="border: 0;">
+                <li><a href="https://www.lib.uwo.ca/" target="_blank">Libraries</a></li>
+                <li><a href="https://www.uwo.ca/about/visit/maps.html" target="_blank">Maps</a></li>
+                <li><a href="https://www.uwo.ca/parking/" target="_blank">Parking</a></li>
             </ul>
+
         </div>
         <!--close links div -->
     </div>
 </div>
 <div id="ribbon">
-    <div id="flipjar"><img title="People search, maps, directories, and frequently-used links" src="./index_files/tab-closed.gif" name="flip1" alt="flip-tab" border="0" class="flip" onclick="swapImage();" onfocus="rOver();" onmouseover="rOver();" onblur="rOut();" onmouseout="rOut();"><a class="homelink" href="https://westernu.ca/">WesternU.ca</a></div>
+    <div id="flipjar">
+        <a class="homelink" href="https://westernu.ca/">WesternU.ca</a>
+        <button class="flipjar__button"
+                type="button"
+                onclick="swapImage();"
+                onfocus="rOver();"
+                onmouseover="rOver();"
+                onblur="rOut();"
+                onmouseout="rOut();"
+                aria-expanded="false"
+                aria-controls="panelbck">
+            <img title="People search, maps, directories, and frequently-used links"
+                 src="./index_files/tab-closed.gif"
+                 name="flip1"
+                 alt="Popular links"
+                 border="0"
+                 class="flip">
+        </button>
+    </div>
 </div>
 
 <!-- Ribbon include ends -->
@@ -576,6 +595,7 @@
 
 <iframe scrolling="no" frameborder="0" allowtransparency="true" src="./index_files/widget_iframe.31849fd556d065e6364d2ceb2dcd1e60.html" title="Twitter settings iframe" style="display: none;"></iframe>
 <iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" src="./index_files/saved_resource(1).html"></iframe>
+<script src="js/fix-stuff.js"></script>
 </body>
 
 </html>

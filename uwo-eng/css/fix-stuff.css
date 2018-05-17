@@ -19,3 +19,87 @@
     overflow: visible;
     clip: auto;
 }
+
+#ribbon {
+    margin-bottom: 15px;
+    padding: 0;
+    border-top: 4px solid #4e2583;
+    background: none;
+}
+
+#flipjar {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+a.homelink {
+    padding-top: 5px;
+    float: none;
+}
+
+.flipjar__button {
+    padding: 0;
+    margin-bottom: 4px;
+    border: 0 solid #4e2583;
+    background: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.flipjar__button:hover,
+.flipjar__button:focus {
+    border-top-width: 4px;
+    margin-bottom: 0;
+}
+
+.flip {
+    margin-top: 0;
+    padding-bottom: 0;
+}
+
+.flip:hover {
+    border-top: 0;
+}
+
+.panelbck {
+    display: none;
+}
+
+div.panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    max-width: 1200px;
+    height: auto;
+    padding: 0 15px;
+}
+
+div.lists {
+    margin-top: 0;
+    display: flex;
+}
+
+div.panel ul {
+    display: inline-block;
+    float: none;
+}
+
+@media (max-width: 1000px) {
+    div.panel {
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+
+    div.ribboninputcontainer {
+        margin-bottom: 30px;
+    }
+
+    .lists-select .fields, .popular-select .fields {
+        display: none !important;
+    }
+
+    div#ribbon {
+        display: block;
+    }
+}
