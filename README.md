@@ -71,3 +71,10 @@ The contact form has the following issues:
 I fixed the first 3 issues (and simply delete the CAPTCHA) in #5. Pull request here: https://github.com/scottblinch/hands-on-a11y/pull/5
 
 I was not able to fully test the error/success states of the form, so I implemented a demo implementation of an accessible form with error states (with lots of bullet points on the accessible best practices used) here: https://codepen.io/scottblinch/pen/VxEgKe
+
+## Running This Locally
+
+1. Clone the repo
+2. `npm install` or `npm install -g http-server`
+3. `http-server`
+4. Visit the links provided by the server, then navigate to the respective pages.
